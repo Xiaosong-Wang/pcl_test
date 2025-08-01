@@ -2,12 +2,11 @@
  #include <pcl/io/pcd_io.h>
  #include <pcl/point_types.h>
  
- int
-   main ()
- {
-   pcl::PointCloud<pcl::PointXYZ> cloud;
- 
- // Fill in the cloud data
+int main ()
+{
+  // new a point cloud
+  pcl::PointCloud<pcl::PointXYZ> cloud;
+  // Fill in the cloud data
   cloud.width    = 5;
   cloud.height   = 1;
   cloud.is_dense = false;
@@ -25,5 +24,5 @@
   for (const auto& point: cloud)
   std::cerr << "    " << point.x << " " << point.y << " " << point.z << std::endl;
 
- return (0);
+  return (0);
 }
