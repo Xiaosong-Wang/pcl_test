@@ -1,13 +1,13 @@
- #include <iostream>
- #include <pcl/io/pcd_io.h>
- #include <pcl/point_types.h>
- 
+#include <iostream>
+#include <pcl/io/pcd_io.h>
+#include <pcl/point_types.h>
+
 int main ()
 {
   // new a point cloud
   pcl::PointCloud<pcl::PointXYZ> cloud;
   // Fill in the cloud data
-  cloud.width    = 5;
+  cloud.width    = 500;
   cloud.height   = 1;
   cloud.is_dense = false;
   cloud.resize (cloud.width * cloud.height);
