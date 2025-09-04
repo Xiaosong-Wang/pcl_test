@@ -12,6 +12,9 @@ int main ()
     
     std::cout << "We have read: " << cloud.size() << " points! " << std::endl;
     std::cout << "cloud Height: " << cloud.height << std::endl;
+
+    std::cout << "We have read: " << cloud.size() << " points! " << std::endl;
+    std::cout << "cloud Height: " << cloud.height << std::endl;
     std::cout << "cloud Width: " << cloud.width << std::endl;
     return 0;
 }
